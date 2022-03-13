@@ -226,4 +226,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () => console.log(`Server is connected to Port ${PORT}`));
+server.listen(process.env.PORT || PORT, () => console.log(`Server is connected to Port ${PORT}`));
